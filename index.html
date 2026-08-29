@@ -94,25 +94,166 @@
 <h3>Legal bases where European or UK privacy law applies</h3>
 <p>Where applicable, we rely on consent for personalised advertising when consent is required; performance of a contract to provide CamHunt Pro features; legitimate interests to answer support and feedback messages and protect the app; and legal obligations where information must be retained or disclosed by law. Google and its advertising partners may determine their own legal bases, which are explained in the consent form and their privacy policies.</p>
 <h2>5. Permissions</h2>
-<p>Android describes some permissions in wording that sounds broader than what the app actually does. This section explains the main permissions and access used by CamHunt, why they are used, when runtime permissions are requested, and what happens to the information.</p>
+
+<p>
+  Android describes some permissions in wording that sounds broader than what
+  the app actually does. This section explains the main permissions and access
+  used by CamHunt, why they are used, when runtime permissions are requested,
+  and what happens to the information.
+</p>
+
 <h3>Camera</h3>
-<p><strong>Why:</strong> the camera sensor performs the Lens Reflection, IR Detector, and AI Object Recognition scans. <strong>When:</strong> the first time you open one of those scans, never at startup. <strong>What happens:</strong> frames are analysed in memory and discarded. Nothing is saved, uploaded or shared. Android&#x27;s permission screen says &quot;take pictures and record video&quot; because that is the standard system wording; CamHunt has no camera photo or video recording feature.</p>
+
+<p>
+  <strong>Why:</strong> The camera sensor performs the Lens Reflection,
+  IR Detector, and AI Object Recognition scans.
+</p>
+
+<p>
+  <strong>When:</strong> The first time you open one of those scans,
+  never at startup.
+</p>
+
+<p>
+  <strong>What happens:</strong> Frames are analysed in memory and discarded.
+  Nothing is saved, uploaded, or shared. Android's permission screen says
+  “take pictures and record video” because that is the standard system wording;
+  CamHunt has no camera photo or video recording feature.
+</p>
+
 <h3>Location (precise and approximate)</h3>
-<p><strong>Why:</strong> on some Android versions and for certain Wi-Fi APIs, Android requires location permission before an app can access Wi-Fi information such as the connected network name. Bluetooth scanning on older Android versions may also require location permission. On Android 13 and newer, some Wi-Fi operations may instead use the Nearby Wi-Fi Devices permission; the current version of CamHunt does not request that permission. CamHunt does not use location permission to determine your physical location. <strong>When:</strong> when you start a Wi-Fi or Bluetooth scan that requires it. <strong>What happens:</strong> CamHunt does not read your GPS position, store your location or transmit it. If you decline, the Network scan may continue without displaying the Wi-Fi network name. On older Android versions, Bluetooth scanning may be unavailable without location permission. Separately, Google&#x27;s advertising services may estimate an approximate location from your IP address, as described in section 4.</p>
+
+<p>
+  <strong>Why:</strong> On some Android versions and for certain Wi-Fi APIs,
+  Android requires location permission before an app can access Wi-Fi
+  information such as the connected network name. Bluetooth scanning on older
+  Android versions may also require location permission. On Android 13 and
+  newer, some Wi-Fi operations may instead use the Nearby Wi-Fi Devices
+  permission; the current version of CamHunt does not request that permission.
+  CamHunt does not use location permission to determine your physical location.
+</p>
+
+<p>
+  <strong>When:</strong> When you start a Wi-Fi or Bluetooth scan that
+  requires it.
+</p>
+
+<p>
+  <strong>What happens:</strong> CamHunt does not read your GPS position,
+  store your location, or transmit it. If you decline, the Network scan may
+  continue without displaying the Wi-Fi network name. On older Android
+  versions, Bluetooth scanning may be unavailable without location permission.
+  Separately, Google's advertising services may estimate an approximate
+  location from your IP address, as described in Section 4.
+</p>
+
 <h3>Nearby devices (Bluetooth scan and Bluetooth connect)</h3>
-<p><strong>Why:</strong> to list Bluetooth devices broadcasting nearby and to read their names. <strong>When:</strong> when you start a Bluetooth scan. <strong>What happens:</strong> results are displayed on screen. The scan is declared to Android with the &quot;never for location&quot; flag, so it is not used to derive your position. Device details are not uploaded.</p>
+
+<p>
+  <strong>Why:</strong> To list Bluetooth devices broadcasting nearby and
+  read their names.
+</p>
+
+<p>
+  <strong>When:</strong> When you start a Bluetooth scan.
+</p>
+
+<p>
+  <strong>What happens:</strong> Results are displayed on screen. The scan is
+  declared to Android with the “never for location” flag, so it is not used to
+  derive your position. Device details are not uploaded.
+</p>
+
 <h3>Wi-Fi state and network state</h3>
-<p><strong>Why:</strong> to know whether you are connected to Wi-Fi, read the network name, and determine the local address range to scan. <strong>When:</strong> during the Network scan. <strong>What happens:</strong> used during the scan and shown on screen. Not uploaded.</p>
+
+<p>
+  <strong>Why:</strong> To know whether you are connected to Wi-Fi, read the
+  network name, and determine the local address range to scan.
+</p>
+
+<p>
+  <strong>When:</strong> During the Network scan.
+</p>
+
+<p>
+  <strong>What happens:</strong> The information is used during the scan and
+  shown on screen. It is not uploaded.
+</p>
+
 <h3>Internet</h3>
-<p><strong>Why:</strong> two separate purposes. The Network scan contacts other devices on your own local network, and the advertising, consent and billing components need to reach Google&#x27;s servers. <strong>When:</strong> during a network scan, and while advertising or billing is active. <strong>What happens:</strong> CamHunt has no developer-operated server and does not automatically send camera images, scan results or saved reports to DB App Studio. The Network scan sends only local discovery and connection requests to devices on your current local network.</p>
+
+<p>
+  <strong>Why:</strong> The internet is used for two separate purposes. The
+  Network scan contacts other devices on your own local network, while the
+  advertising, consent, and billing components need to reach Google's servers.
+</p>
+
+<p>
+  <strong>When:</strong> During a Network scan and while advertising or
+  billing is active.
+</p>
+
+<p>
+  <strong>What happens:</strong> CamHunt has no developer-operated server and
+  does not automatically send camera images, scan results, or saved reports to
+  DB App Studio. The Network scan sends only local discovery and connection
+  requests to devices on your current local network.
+</p>
+
 <h3>Vibrate</h3>
-<p><strong>Why:</strong> haptic feedback and scan alerts. No information is involved.</p>
+
+<p>
+  <strong>Why:</strong> To provide haptic feedback and scan alerts.
+</p>
+
+<p>
+  <strong>When:</strong> When haptic feedback or a supported scan alert occurs.
+</p>
+
+<p>
+  <strong>What happens:</strong> The device vibrates briefly. No personal
+  information is involved.
+</p>
+
 <h3>Storage (Android 9 and older only)</h3>
-<p><strong>Why:</strong> to save a report image to the shared device gallery on Android 8 and Android 9. <strong>When:</strong> only when you choose to save a report image. This permission is not requested on Android 10 or newer. <strong>What happens:</strong> only the report image you requested is written to the gallery.</p>
+
+<p>
+  <strong>Why:</strong> To save a report image to the shared device gallery on
+  Android 8 and Android 9.
+</p>
+
+<p>
+  <strong>When:</strong> Only when you choose to save a report image. This
+  permission is not requested on Android 10 or newer.
+</p>
+
+<p>
+  <strong>What happens:</strong> Only the report image you requested is
+  written to the gallery.
+</p>
+
 <h3>Advertising technologies</h3>
-<p>The Google Mobile Ads SDK may add Android permissions related to the advertising identifier and Android advertising or attribution services. Google uses these technologies for advertising, measurement and fraud prevention as described in section 4. Where Android provides controls, you can reset or delete your advertising identifier and manage advertising privacy settings under Privacy or Ads.</p>
+
+<p>
+  The Google Mobile Ads SDK may add Android permissions related to the
+  advertising identifier and Android advertising or attribution services.
+  Google uses these technologies for advertising, measurement, and fraud
+  prevention, as described in Section 4.
+</p>
+
+<p>
+  Where Android provides controls, you can reset or delete your advertising
+  identifier and manage advertising privacy settings under
+  <strong>Privacy</strong> or <strong>Ads</strong>.
+</p>
+
 <h3>Permissions CamHunt does not request</h3>
-<p>No microphone. No contacts. No SMS or call logs. No permission to post notifications. No background location. No permission to read your photo library.</p>
+
+<p>
+  No microphone. No contacts. No SMS or call logs. No permission to post
+  notifications. No background location. No permission to read your photo
+  library.
+</p>
 <h2>6. On-device processing</h2>
 <p>All detection work happens on your phone: camera analysis, the AI model, infrared analysis, magnetometer readings, Bluetooth scanning and network scanning. None of this analysis is performed on a remote server, and no detection data is transmitted to us.</p>
 <h2>7. Advertising</h2>
@@ -188,7 +329,7 @@
 <p>We may update this policy when the app changes or when the law requires it. The “Last updated” date at the top of this page shows when this policy was most recently changed. When appropriate, we may also notify users of significant changes through the app or Google Play release notes.</p>
 <h2>21. Contact</h2>
 <p>Email: <a href="mailto:camhuntapp.support@gmail.com">camhuntapp.support@gmail.com</a></p>
-<p>We aim to reply to privacy requests within 30 days.</p>
+<p>We aim to reply to privacy requests within 48 Hours.</p>
 </main>
 </body>
 </html>
